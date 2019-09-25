@@ -21,8 +21,9 @@ body {
     text-decoration: none;
     font-size: 24px;
     font-weight: 300;
-    width: 22%;
+    width: 23.72%;
     text-align: center;
+    text-rendering: optimizeLegibility;
     /* If you want the text to be centered */
 }
 
@@ -88,11 +89,12 @@ h1 {
     font-size: 128px;
     font-weight: 100;
     color: #D5E5F2;
+    text-rendering: optimizeLegibility;
     
 }
 
-#home {
-    background-color: #262626;
+.home {
+    background-color: #101010;
     opacity: 0.95;
     width: 80%;
     margin-top: 64;
@@ -106,41 +108,20 @@ h1 {
     z-index: 2;
 }
 
-
-
-#esotericism {
-    background-color: #262626;
-    opacity: 0.95;
-    width: 80%;
-    margin-top: 64;
-    margin-left: 10%;
-    margin-right: 250;
-    margin-bottom: 110;
-    top: 135;
-    height: auto;
-    position: absolute;
-    padding: 16;
-    z-index: 2;
-}
-
-#gallery {
-    background-color: #888888;
-    width: 1000;
-    margin-top: 64;
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-bottom: 110;
-    top: 135;
-    height: auto;
-    position: absolute;
-    padding: 16;
-    left: -500;
+.home a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
     font-weight: 100;
-    z-index: 2;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+    
 }
 
-#eronk {
-    background-color: #262626;
+.esotericism {
+    background-color: #101010;
     opacity: 0.95;
     width: 80%;
     margin-top: 64;
@@ -152,4 +133,73 @@ h1 {
     position: absolute;
     padding: 16;
     z-index: 2;
+}
+
+.esotericism a {
+    float: left;
+    width: 9%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.gallery {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.gallery a {
+    float: left;
+    width: 14%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.eronk {
+    background-color: #101010;
+    opacity: 0.95;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.eronk a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.__processing0 {
+    margin-left: 25%;
 }

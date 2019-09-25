@@ -12,11 +12,12 @@ void setup() {
   hl0 = new horizontalLineSegment();
   fhl0 = new fastHorizontalLineSegment();
   fl0 = new fastLineSegment();
+  smooth(8);
 }
 
 void draw() {
   background(#252526);
-  r0.display();
+  //r0.display();
   l0.display();
   hl0.display();
   fhl0.display();
@@ -60,7 +61,7 @@ class LineSegment {
   }
   
   void display() {
-    if (frameCount < 490) {
+    if (frameCount < 250) {
       expand();
       inverseExpand();
       rightInverseExpand();
@@ -163,7 +164,7 @@ class Ring {
   }
   
   void display() {
-    if (frameCount < 490) {
+    if (frameCount < 250) {
       x1-= (width / 125.0);
       y1-= (height / 125.0);
       if (x1 == -width) {
@@ -222,7 +223,7 @@ class fastHorizontalLineSegment {
     line(x21, y21, x22, y22);
     line(x23, y23, x24, y24);
     
-    if (frameCount < 490) {
+    if (frameCount < 250) {
       y17+= (height / 125.0);
       y18+= (height / 125.0);
       y19-= (height / 125.0);
@@ -290,7 +291,7 @@ class fastLineSegment {
   }
   
   void display() {
-    if (frameCount < 490) {
+    if (frameCount < 250) {
       x25-= (width / 125.0);
       y26-= (height / 125.0);
       x27+= (width / 125.0);
@@ -362,7 +363,7 @@ class horizontalLineSegment {
   }
   
   void display() {
-    if (frameCount < 490) {
+    if (frameCount < 250) {
       y9+= (height / 250.0);
       y10+= (height / 250.0);
       y11-= (height / 250.0);
