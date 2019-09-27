@@ -21,8 +21,8 @@ body {
     text-decoration: none;
     font-size: 24px;
     font-weight: 300;
-    width: 22%;
     text-align: center;
+    width: 22%;
     text-rendering: optimizeLegibility;
     /* If you want the text to be centered */
 }
@@ -170,7 +170,135 @@ h1 {
     font-weight: 100;
     color: #D5E5F2;
     text-rendering: optimizeLegibility;
-    
+}
+
+.galleryDefo {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryDefo a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.gallerySpiral {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.gallerySpiral a {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.galleryTerrain {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryTerrain a {
+    float: left;
+    width: 14.2%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.terrainNext {
+    z-index: 3;
+    background-color: #000000;
+    width: 250px;
+    height 100px;
+    position: absolute;
+    border-color: #D5E5F2;
+    border-width: 2px;
+    border-style: ridge;
+    margin-top: 350;
+    margin-left: 70%;
+    left: 0;
+}
+
+.terrainNext a {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-decoration: none;
+    width: 100%;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.galleryLinks {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 330;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryLinks a {
+    float: left;
+    width: 33%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+    border-color: #D5E5F2;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .eronk {
