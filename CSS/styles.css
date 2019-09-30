@@ -120,6 +120,16 @@ h1 {
     
 }
 
+#homeParagraph {
+    background-color: #101010;
+    position: absolute;
+    top: 350px;
+    font-family: 'Roboto', sans-serif;
+    color: #D5E5F2;
+    font-weight: 100;
+    font-size: 22;
+}
+
 .esotericism {
     background-color: #101010;
     opacity: 0.95;
@@ -325,7 +335,16 @@ h1 {
     font-weight: 100;
     color: #D5E5F2;
     text-rendering: optimizeLegibility;
-    
+}
+
+#eronkParagraph {
+    background-color: #101010;
+    position: absolute;
+    top: 350px;
+    font-family: 'Roboto', sans-serif;
+    color: #D5E5F2;
+    font-weight: 100;
+    font-size: 22;
 }
 
 .__processing0 {
