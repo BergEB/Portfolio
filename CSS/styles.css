@@ -363,6 +363,11 @@ h1 {
     border-style: solid;
 }
 
+.twitchEmbed {
+    width: 600px;
+    height: 337.5px;
+}
+
 .__processing0 {
     margin-left: 25%;
 }
