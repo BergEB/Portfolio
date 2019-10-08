@@ -196,6 +196,18 @@ h1 {
     text-rendering: optimizeLegibility;
 }
 
+#galleryParagraph {
+    background-color: #101010;
+    position: absolute;
+    top: 350px;
+    font-family: 'Roboto', sans-serif;
+    color: #D5E5F2;
+    font-weight: 100;
+    font-size: 22;
+    border-width: 1;
+    border-style: solid;
+}
+
 .galleryDefo {
     background-color: #101010;
     width: 80%;
