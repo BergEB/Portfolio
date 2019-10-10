@@ -1,6 +1,7 @@
 float R = 1200;
 float s = 0;
 float p = 0;
+float a = 1;
 
 void setup() {
   size(1000, 1000, P3D);
@@ -11,11 +12,11 @@ void draw() {
   background(0);
   lights();
   pushMatrix();
-  if (s > 180) {
-    s = 0;
+  if (s > 180 || s < 0) {
+    a*=-1;
   }
   translate(width / 2, height / 2, -s + 775);
-  s+=.01;
+  s+=a;
   rotateZ(p);
   beginShape(TRIANGLE_STRIP);
   for(float t = 0; t < 200; t+=1.55) {
@@ -25,5 +26,5 @@ void draw() {
   }
   endShape();
   popMatrix();
-  p+= PI / 2500;
+  p+= PI / 500;
 }
