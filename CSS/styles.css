@@ -144,6 +144,8 @@ h1 {
     height: auto;
     position: absolute;
     padding: 16;
+    padding-left: 8px;
+    padding-right: 24;
     z-index: 2;
 }
 
