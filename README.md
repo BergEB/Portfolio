@@ -5,14 +5,17 @@ This Repository represents a portfolio of my work from September 2019 to June 20
 
 ## Overview
 
-#### Home
-The home page is exactly what it seems, welcoming whoever visits the page and explaining the purpose of the website.
+#### Design
+Every page in this website shares a theme: thin, sleek lines colored to maximize each element's distinction while maintaining a readable and stylistic color scheme. I used thin, nearly white borders in a way that highlights the content within the borders while still maintaining contrast between darker and more neutral colors.
 
-#### Gallery
-The gallery page provides links to Processing sketches I have created. Each was initially writen in Java, using Processing, so some graphical methods are not supported in the JavaScript versions (*clip() method originally used in Defo Java sketch not supported in JavaScript*). I am planning on updating both the TSSprial sketch, and the 3D height mapping in the Terrain sketch, the libraries of the latter I will either have to manually import or forget about all together to reduce clientside interaction.
+#### Home Page
+The home page is exactly what it seems, welcoming whoever visits the page and explaining the purpose of the website. It may seem like most home and index.html pages are synonymous, but the index(welcome) page is only accessible via direct URL.
 
-#### Esotericism
-The Esotericism page is the "Deep Thoughts" section of the website. Here you will find some cryptic and unusually formatted wordplay. *don't think too hard*
+#### Gallery (Projects)
+The gallery page provides links to Processing sketches I have created. Each was initially writen in Java, using Processing, so some graphical methods are not supported in the JavaScript versions (* For example: the clip() method originally used in my Defo sketch is not directly supported in JavaScript*). I am planning on implementing the original 3D heightmapping within the Terrain sketch. To do so I will either have to find a way to import the initial camera control library I used[PeasyCam](https://mrfeinberg.com/peasycam/) or translate one of my own camera control libraries into JS.
 
-#### Eronk
-The Eronk page is the "About me" section of the website. On this page you will find information about my experiences with Computer Science, a photo gallery, and an embedding of my twitch stream.
+#### Esotericism (Deep Thoughts)
+The Esotericism page is the "Deep Thoughts" section of the website. Here you will find some cryptic and unusually formatted wordplay. The style is pretty cool tho.
+
+#### Eronk (About me)
+The Eronk page is the "About me" section of the website. On this page you will find information about my experiences with Computer Science, a photo gallery, and an embedding of my twitch stream *(player blocked on district network)*.
