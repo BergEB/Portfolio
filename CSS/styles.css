@@ -120,10 +120,23 @@ h1 {
     
 }
 
-#homeParagraph {
+#homeParagraphOne {
     background-color: #101010;
     position: absolute;
     top: 350px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    color: #D5E5F2;
+    font-weight: 100;
+    font-size: 22;
+    border-width: 1;
+    border-style: solid;
+}
+
+#homeParagraphTwo {
+    background-color: #101010;
+    position: absolute;
+    top: 465px;
     font-family: 'Roboto', sans-serif;
     color: #D5E5F2;
     font-weight: 100;
@@ -307,6 +320,31 @@ h1 {
     font-weight: 100;
     text-decoration: none;
     width: 100%;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.galleryLightning {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryLightning a {
+    float: left;
+    width: 11.1111%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
     color: #D5E5F2;
     text-rendering: optimizeLegibility;
 }
