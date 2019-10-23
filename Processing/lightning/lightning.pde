@@ -140,7 +140,7 @@ class lightningBolt {
     vertex(t.teslaX, t0.teslaY);
     endShape(CLOSE);
     stroke(255, 0, 0);
-    line(t.teslaX, t.teslaY, t.teslaX, t0.teslaY);
+    line(t.teslaX, t.teslaY, t0.teslaX, t0.teslaY);
   }
   
   void display() {
