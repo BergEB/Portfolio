@@ -135,9 +135,12 @@ class lightningBolt {
     noFill();
     beginShape();
     vertex(t0.teslaX, t0.teslaY);
-    vertex(t.teslaX, t0.teslaY);
     vertex(t.teslaX, t.teslaY);
+    stroke(0, 255, 0);
+    vertex(t.teslaX, t0.teslaY);
     endShape(CLOSE);
+    stroke(255, 0, 0);
+    line(t.teslaX, t.teslaY, t.teslaX, t0.teslaY);
   }
   
   void display() {
