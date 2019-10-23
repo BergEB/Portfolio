@@ -150,6 +150,7 @@ class lightningBolt {
     translate(0, -t.teslaY);
     stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
     startX = (float)Math.sqrt(sq(t0.teslaX - t.teslaX) + sq(t0.teslaY - t.teslaY));
+    strokeWeight(2);
     while (endX > 10) {
       endX = startX - ((float)(Math.random() * 10));
       endY = startY - ((float)(Math.abs(Math.random() * 21) - 10));
