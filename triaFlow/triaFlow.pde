@@ -16,7 +16,6 @@ void draw() {
     polygonFX((i * 30) + 1);
     popMatrix();
   }
-  println(R);
   R+= rAcc;
 }
 
