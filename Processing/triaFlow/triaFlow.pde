@@ -13,7 +13,7 @@ void draw() {
     pushMatrix();
     translate(width / 2, height / 2);
     rotate(R * (11.5 - i));
-    polygonFX((i * 30) - 10);
+    polygonFX((i * 20) - 10);
     popMatrix();
   }
   R+= rAcc;
