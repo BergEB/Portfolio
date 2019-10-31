@@ -9,11 +9,12 @@ void setup() {
   map = new heightMapJPG();
   hud = new HUD();
   smooth(8);
-  rectMode(CENTER);
+  map.create();
+  save("Data/heightmap.jpg");
 }
 
 void draw() {
-  if (created == false) {
+  /*if (created == false) {
     background(0);
     fill(0);
     stroke(255);
@@ -36,7 +37,7 @@ void draw() {
     rectMode(CENTER);
     rect(400, 400, 800, 800);
     hud.display();
-  }
+  }*/
 }
 
 class heightMapJPG {
@@ -57,7 +58,7 @@ class heightMapJPG {
     for (int y = 0; y < cols; y++) {
       float xoff = 0;
       for (int x = 0; x < rows; x++) {
-        kolor[x][y] = map(noise(xoff, yoff), 0, 1, 0, 255);
+        kolor[x][y] = map(noise(xoff, yoff), 0.0, 1.0, 0.0, 255.0);
         xoff += scale;
       }
       yoff += scale;
