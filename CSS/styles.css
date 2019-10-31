@@ -354,6 +354,7 @@ h1 {
 }
 
 .galleryLinks {
+    background-color: transparent;
     width: 80%;
     margin-top: 64;
     margin-left: 10%;
@@ -367,6 +368,7 @@ h1 {
 }
 
 .galleryLinks a {
+    background-color: #101010;
     float: left;
     width: 33%;
     text-align: center;
