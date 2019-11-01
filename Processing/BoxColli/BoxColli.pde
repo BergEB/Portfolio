@@ -6,10 +6,12 @@ float zS;
 float xSA;
 float ySA;
 float zSA;
+float r;
 
 void setup() {
   size(800, 800, P3D); 
   smooth(8);
+  r = 0;
   xS = 0;
   yS = 0;
   zS = 0;
@@ -19,19 +21,23 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(16);
+  r+= PI / 1200;
   pushMatrix();
   noFill();
   stroke(200);
   strokeWeight(1.5);
-  translate(400, 400, -400);
+  translate(400, 400, -25);
   if (mousePressed) {
     rotateY((PI / 1200) * (mouseX - x1));
     rotateX((PI / 1200) * (y1 - mouseY));
+    r = 0;
   }
   else {
     x1 = mouseX;
     y1 = mouseY;
+    rotateY(r);
+    rotateX(r);
   }
   box(400);
   fill(200);

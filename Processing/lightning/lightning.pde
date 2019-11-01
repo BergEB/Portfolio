@@ -41,7 +41,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(16);
   t.display();
   t.bounds(800, 800);
   t0.display();

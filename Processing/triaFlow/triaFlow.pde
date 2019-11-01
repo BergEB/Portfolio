@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(16);
   for (int i = 20; i > 0; i--) {
     pushMatrix();
     translate(width / 2, height / 2);
@@ -21,7 +21,7 @@ void draw() {
 
 
 void polygonFX(int n) {
-    fill(0);
+    fill(16);
     stroke(200);
     strokeWeight(2);
     polygon(0, 0, n, 3);
