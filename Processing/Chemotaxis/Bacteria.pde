@@ -1,5 +1,3 @@
-int cells = 1;
-
 class Bacteria {
   private int x;
   private int y;
@@ -17,10 +15,6 @@ class Bacteria {
   void move() {
     x+= (int)(Math.random() * 3) - 1;
     y+= (int)(Math.random() * 3) - 1;
-  }
-  
-  void divide(int x) {
-    cells*= 2;
   }
   
 }
