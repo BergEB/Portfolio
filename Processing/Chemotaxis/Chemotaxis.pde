@@ -1,21 +1,23 @@
 Bacteria [] b;
 Bacteria m;
-int cells = 1;
+int cells;
 
 void setup() {
   size(800, 800);
+  cells = 1;
   b = new Bacteria[cells];
   for (int i = 0; i < b.length; i++) {
-    b[i] = new Bacteria(width / 2, height / 2);
+    b[i] = new Bacteria();
   }
 }
 
 void draw() {
   background(16);
-  mousePressed();
   for (int i = 0; i < b.length; i++) {
-    b[i].show();
     b[i].move();
+    b[i].bounds();
+    b[i].collision();
+    b[i].show();
   }
 }
 
@@ -25,4 +27,9 @@ void mousePressed() {
 
 void divide() {
   cells*= 2;
+  b = new Bacteria[cells];
+  for (int i = 0; i < b.length; i++) {
+    b[i] = new Bacteria();
+  }
+  
 }
