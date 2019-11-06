@@ -43,6 +43,15 @@ class Bacteria {
   
   void collision() { // TODO: make the distance formula the first condition, then check which (x or y) is closer with 2 if statements within the first
     for (Bacteria i : b) {
+      float collisionX = Math.abs(x - i.x);
+      float collisionY = Math.abs(i.y - y);
+      float collisionH = (float)Math.sqrt(sq(collisionX) + sq(collisionY));
+      float collisionAngle = degrees(atan(collisionY / collisionX));
+      if (Math.sqrt(sq(i.x - this.x) + sq(i.y - this.y)) <= w) {
+        
+      }
+    }
+    /*for (Bacteria i : b) {
       if (Math.abs(this.x - i.x) <= w && Math.sqrt(sq(i.x - this.x) + sq(i.y - this.y)) <= w) {
         this.xA*=-1;
         i.xA*=-1;
@@ -51,6 +60,6 @@ class Bacteria {
         this.yA*=-1;
         i.yA*=-1;
       }
-    }
+    }*/
   }
 }
