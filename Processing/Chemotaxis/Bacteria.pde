@@ -11,8 +11,8 @@ class Bacteria {
   Bacteria() {
     x = (float)(Math.random() * 781) + 10;
     y = (float)(Math.random() * 781) + 10;
-    xVelocity = (int)((Math.random() * 4) - 1);
-    yVelocity = (int)((Math.random() * 4) - 1);
+    xVelocity = (float)((Math.random() * 4) - 1);
+    yVelocity = (float)((Math.random() * 4) - 1);
     if (xVelocity == 0 && yVelocity == 0) {
       if ((int)(Math.random() * 2) == 0) {
         xVelocity+= (int)((Math.random() * 2) + 1);
@@ -21,8 +21,8 @@ class Bacteria {
         yVelocity+= (int)((Math.random() * 2) + 1);
       }
     }
-    previousX = x + xVelocity;
-    previousY = x + yVelocity;
+    previousX = x - xVelocity;
+    previousY = x - yVelocity;
     w = 30;
     h = 30;
   }
