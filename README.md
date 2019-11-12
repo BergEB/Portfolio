@@ -1,5 +1,18 @@
 # Portfolio
 
+```
+            %@@@@@@@@@@@
+           &@@@@##@@@@@@/
+          %@@@@*  %@@@@/
+         %@@@@* ,&@@@@*
+        &@@@@@@@@@@@#
+       %@@@@@@@*
+     .&@@@@.
+     &@@@@/
+    %@@@@,
+   /((((
+```
+
 This Repository represents a portfolio of my work from September 2019 to June 2020. This portfolio takes the form of a web page which can be found [HERE](https://bergeb.github.io/Portfolio/Pages/home.html).
 ___
 
