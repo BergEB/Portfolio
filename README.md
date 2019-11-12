@@ -34,5 +34,5 @@ The gallery page provides links to Processing sketches I have created. Each was 
 The Esotericism page is the "Deep Thoughts" section of the website. Here you will find some cryptic and unusually formatted wordplay. Pretty cool tho.
 
 #### Eronk (About me)
-The Eronk page is the "About me" section of the website. On this page you will find information about my experiences with Computer Science, a photo gallery, and an embedding of [my twitch stream](https://twitch.tv/eronkbongt/) *(twitch player blocked on district network)*. 
+The Eronk page is the "About me" section of the website. On this page you will find information about my experiences with Computer Science, and a photo gallery.
 ___
