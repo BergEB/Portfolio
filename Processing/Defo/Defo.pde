@@ -1,3 +1,5 @@
+/* @pjs preload="../Processing/Defo/data/Roboto-Thin.ttf"; */
+
 heightMapJPG mapp;
 hmm defo;
 float x1;
@@ -10,8 +12,7 @@ PFont robotoThin;
 
 void setup() {
   size(1000, 600);
-    frameRate(30);
-  noCursor();
+  frameRate(25);
   mapp = new heightMapJPG();
   defo = new hmm();
   x1 = width / 2;
@@ -80,7 +81,7 @@ class hmm {
   float slideX;
   
   hmm() {
-    robotoThin = createFont("Roboto-Thin.ttf", 32);
+    robotoThin = createFont("../Processing/Defo/data/Roboto-Thin.ttf", 32);
   }
   
   void display() {
@@ -110,19 +111,12 @@ class hmm {
       }
     }
     popMatrix();
-    if (((double)slideX * Math.random()) % 30 < 2) {
-      fill(255, 255);
-    }
-    else {
-      fill(200, 0);
-    }
+    fill(200, 0);
     if (slideX > 118) {
       slideX = 0;
     }
     else {
       slideX++;
     }
-    textFont(robotoThin, 128);
-    text("<RB>", 354, 225.5, 294, 151);
   }
 }

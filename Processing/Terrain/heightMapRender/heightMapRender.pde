@@ -1,30 +1,57 @@
+/* @pjs preload="../Processing/Terrain/heightMapRender/data/heightmap.jpg"; */
+
 float x1;
 float y1;
+float r;
+float rx;
+float ry;
+float rTx;
+float rTy;
 heightMapObject terrain0;
 float[][] terrain;
+int mouseXOrigin;
+int mouseYOrigin;
+int mouseXPrevious;
+int mouseYPrevious;
+float startMillis;
 
 void setup() {
   frameRate(60);
   size(800, 800, P3D);
-  smooth(8);
+  smooth();
   terrain0 = new heightMapObject();
   terrain0.declare();
+  hint(ENABLE_STROKE_PERSPECTIVE);
 }
 
 void draw() {
-  background(0);
+  background(16);
   lights();
   pushMatrix();
   translate(0, 0, -500);
   translate(400, 400, 0);
+  mouseXPrevious = mouseXOrigin;
+  mouseYPrevious = mouseYOrigin;
+  mouseXOrigin = mouseX;
+  mouseYOrigin = mouseY;
   if (mousePressed) {
-    rotateY((PI / 1200) * (mouseX - x1));
-    rotateX((PI / 1200) * (y1 - mouseY));
+    ry+= mouseXOrigin - mouseXPrevious;
+    rx+= mouseYOrigin - mouseYPrevious;
+    rotateY((PI / 1200) * (ry));
+    rotateX(-(PI / 1200) * (rx));
+    r = 0;
   }
   else {
-    x1 = mouseX;
-    y1 = mouseY;
+    rTx+= rx;
+    rTy+= ry;
+    ry = 0;
+    rx = 0;
+    r+= PI / 2000;
   }
+  rotateY((PI / 1200) * rTy);
+  rotateX(-(PI / 1200) * rTx);
+  rotateX(PI / 4);
+  rotateZ(r);
   translate(-400, -400, 0);
   terrain0.display();
   popMatrix();
@@ -39,7 +66,7 @@ void keyPressed() {
 }
 
 class heightMapObject {
-  int scl = 8;
+  int scl = 20;
   int cols;
   int rows;
   int peakX;
@@ -54,7 +81,7 @@ class heightMapObject {
     cols = 800 / scl;
     rows = 800 / scl;
     terrain = new float[rows][cols];
-    heightmap = loadImage("heightmap.jpg");
+    heightmap = loadImage("../Processing/Terrain/heightMapRender/data/heightmap.jpg");
     heightmap.resize(800, 800);
     peakZ = terrain[0][0];
   }
@@ -62,13 +89,13 @@ class heightMapObject {
   void display() {
     //stroke(0, 255, 255);
     noStroke();
-    //fill(0);
+    fill(0);
     
     for (int y = 0; y < cols - 1; y++) {
       beginShape(TRIANGLE_STRIP);
       for (int x = 0; x < rows; x++) {
-        fill(terrain[x][y], 0, 255 - terrain[x][y]);
-        //stroke(terrain[x][y], 0, 255 - terrain[x][y]);
+        //fill(terrain[x][y], 0, 255 - terrain[x][y]);
+        stroke(terrain[x][y], 0, 255 - terrain[x][y]);
         vertex(x * scl, y * scl, terrain[x][y]);        
         vertex(x * scl, (y + 1) * scl, terrain[x][y + 1]);
       }
