@@ -6,7 +6,7 @@ float a = 1;
 void setup() {
   size(1000, 1000, P3D);
   //smooth(8); disabled because useless in web
-  hint(ENABLE_STROKE_PERSPECTIVE);
+  //hint(ENABLE_STROKE_PERSPECTIVE); causes runtime error in web-based js
   
 }
 
