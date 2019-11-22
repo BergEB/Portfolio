@@ -22,8 +22,10 @@ body {
     color: #D5E5F2;
     padding-top: 12;
     padding-bottom: 12;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    font-size: 36px;
+    font-weight: 100;
+    font-size: 28px;
     font-weight: 300;
     text-align: center;
     text-rendering: optimizeLegibility;
