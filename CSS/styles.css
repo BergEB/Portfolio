@@ -26,7 +26,6 @@ body {
     text-decoration: none;
     font-weight: 100;
     font-size: 28px;
-    font-weight: 300;
     text-align: center;
     text-rendering: optimizeLegibility;
     /* If you want the text to be centered */
@@ -66,7 +65,7 @@ h1 {
     margin-left: -125;
     margin-right: -250;
     height: auto;
-    top: 135;
+    top: 55;
     position: fixed;
     z-index: 1;
 }
@@ -219,7 +218,7 @@ h1 {
 #galleryParagraph {
     background-color: #101010;
     position: absolute;
-    top: 1785px;
+    top: 2145px;
     height: auto;
     font-family: 'Roboto', sans-serif;
     color: #D5E5F2;
@@ -246,6 +245,56 @@ h1 {
 .galleryDefo a {
     float: left;
     width: 25%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.galleryChemotaxis {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryChemotaxis a {
+    float: left;
+    width: 10%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 100;
+    color: #D5E5F2;
+    text-rendering: optimizeLegibility;
+}
+
+.galleryStarfield {
+    background-color: #101010;
+    width: 80%;
+    margin-top: 64;
+    margin-left: 10%;
+    margin-right: 250;
+    margin-bottom: 110;
+    top: 135;
+    height: auto;
+    position: absolute;
+    padding: 16;
+    z-index: 2;
+}
+
+.galleryStarfield a {
+    float: left;
+    width: 11%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 128px;
@@ -360,10 +409,11 @@ h1 {
 
 .galleryLinks {
     background-color: transparent;
-    width: 80%;
+    width: 60%;
+    left: 0;
     margin-top: 64;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 110;
     top: 340;
     height: auto;
@@ -375,7 +425,7 @@ h1 {
 .galleryLinks a {
     background-color: #101010;
     float: left;
-    width: 50%;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -386,6 +436,13 @@ h1 {
     border-color: #D5E5F2;
     border-width: 0px;
     border-style: solid;
+    margin-bottom: 32;
+    padding-bottom: 0px;
+}
+
+.galleryLinks a:hover {
+    z-index: 3;
+    width: 100%;
     padding-bottom: 300px;
 }
 
